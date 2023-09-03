@@ -72,6 +72,8 @@ body {
 	padding-left: 0;
 	margin-bottom: 32px;
 	margin-left: -10px;
+	font-family: "TTLakes";
+	font-size: 16px;
 }
 
 .menu li:hover {
@@ -122,20 +124,22 @@ body {
 	margin-left: 24px;
 	margin-bottom: 32px;
 	margin-top: 270px;
-	font-family: "TTLakes";
-	font-size: 16px;
 }
 
 /**/
 .footer__email{
 	margin-bottom: 12px;
+	font-family: "TTLakes";
+	font-size: 16px;
 }
 
 /*Номер телефона*/
 .footer__phone {
+	font-family: "TTLakes";
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 32px;
+
 	margin-bottom: 40px;
 }
 
@@ -143,11 +147,15 @@ body {
 .footer__lang {
 	display: flex;
 	gap: 7px;
+	font-family: "TTLakes";
+	font-size: 16px;
 }
 
 .footer__lang a {
 	text-decoration: none;
 	color: #1B1C21;
+	font-family: "TTLakes";
+	font-size: 16px;
 }
 
 .footer__lang_active {
