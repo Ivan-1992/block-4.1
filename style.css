@@ -1,0 +1,157 @@
+@import url(fonts.css);
+
+body {
+	max-width: 320px;
+	height: 1024px;
+
+	font-family: "TTLakes";
+	font-size: 16px;
+
+	overflow: scroll;
+
+	margin: 0;
+	
+	background-color: #ffffff;
+	box-shadow: 16px 0px 52px 0px #0E185033;
+	opacity: 1;
+}
+
+/*Стили для всех кнопок*/
+.button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.button:hover {
+	box-shadow: 0 0 15px 0 red;
+}
+
+.header {
+	max-width: 320px;
+	height: 60px;
+
+	margin-left: 24px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/*Логотип*/
+.header__logo {
+	transform: translateX(-45px);
+}
+
+/*Кнопка закрытия окна*/
+.header__close {
+	background-image: url(images/burger.svg);
+	background-size: cover;
+}
+
+/*Кнопка поиска*/
+.header__search {
+	background-image: url(images/search.svg);
+	background-size: cover;
+	transform: translateX(-25px);
+}
+
+.menu {
+	list-style: none;
+}
+
+/*Пункты меню*/
+.menu li {
+	padding-left: 0;
+	margin-bottom: 32px;
+	margin-left: -10px;
+}
+
+.menu li:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color: #7E7E82;
+}
+
+.menu__active {
+	color: #7E7E82;	
+}
+
+/*Полоска*/
+.menu__highlight {
+	width: 4px;
+	height: 32px;
+	position: absolute;
+	left: 0px;
+	top: 125px;
+}
+
+/*Кнопки в футере*/
+.image {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+/*Кнопка звонок*/
+.image__call {
+	background-image: url(images/call.svg);
+	background-size: cover;
+}
+
+/*Кнопка чат*/
+.image__chat {
+	background-image: url(images/chat.svg);
+	background-size: cover;
+}
+
+/*Кнопка профиль*/
+.image__profile {
+	background-image: url(images/profile.svg);
+	background-size: cover;
+}
+
+.footer {
+	margin-left: 24px;
+	margin-bottom: 32px;
+	margin-top: 270px;
+}
+
+/**/
+.footer__email{
+	margin-bottom: 12px;
+}
+
+/*Номер телефона*/
+.footer__phone {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+	margin-bottom: 40px;
+}
+
+/*Языки*/
+.footer__lang {
+	display: flex;
+	gap: 7px;
+}
+
+.footer__lang a {
+	text-decoration: none;
+	color: #1B1C21;
+}
+
+.footer__lang_active {
+	color: #7E7E82 !important;
+}
+
+.footer__lang a:hover {
+	cursor: pointer;
+	color: #1B1C21 !important;
+	font-size: 20px;
+}
