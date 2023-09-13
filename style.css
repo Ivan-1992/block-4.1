@@ -27,6 +27,7 @@ body {
 
 .button:hover {
 	opacity: 0.7;
+	transition: 2s;
 }
 
 .header {
@@ -73,7 +74,8 @@ body {
 }
 
 .menu li:hover {
-	opacity: 0.8;
+	opacity: 0.7;
+	transition: 2s;
 	cursor: pointer;
 	color: #7E7E82;
 }
@@ -82,13 +84,18 @@ body {
 	color: #7E7E82;	
 }
 
-/*Полоска*/
-.menu__highlight {
-	width: 4px;
-	height: 32px;
+.menu__active::before {
+	content: "";
+
 	position: absolute;
-	left: 0px;
+	left: -5px;
 	top: 125px;
+
+	width: 9px;
+	height: 32px;
+
+	background-color: #41F6D7;
+	border-radius: 50px;
 }
 
 /*Кнопки в футере*/
@@ -134,6 +141,16 @@ body {
 	line-height: 32px;
 
 	margin-bottom: 40px;
+}
+
+.email {
+	text-decoration: none;
+	color: #1B1C21;
+}
+
+.phone {
+	text-decoration: none;
+	color: #1B1C21;
 }
 
 /*Языки*/
